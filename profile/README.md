@@ -28,18 +28,19 @@ flowchart LR
     P2 --> KB
     P3 --> PR["Predictive<br/>delay / dispute / exposure risk"]
     P4 --> PR
+    LT["Live Carrier Tracking<br/>CargoWise / carrier booking &amp; AIS feeds"] --> PR
 
     classDef n fill:#DCE5D5,stroke:#2F4A32,color:#263526,stroke-width:2px;
     classDef c fill:#2F4A32,stroke:#1F3021,color:#FFFFFF,stroke-width:4px;
     classDef roadmap fill:#F5F0E3,stroke:#B89B5E,color:#2D3C21,stroke-width:2px,stroke-dasharray:5 5;
-    class R1,R2,R3,R4,P1,P2,P3,P4 n; class D c; class KB,PR roadmap;
+    class R1,R2,R3,R4,P1,P2,P3,P4 n; class D c; class KB,PR,LT roadmap;
 ```
 
 The four outputs around the hub — **Supply Contracts, Quality Specification, Delivery Diary & Logistics, Assay Exchange** — are live today: the physical trade lifecycle turned into structured, queryable data instead of documents and spreadsheets.
 
 **Knowledge Base** (not yet built, dashed above) sits on top of that structured data and the underlying contract documents themselves, letting a trader or ops analyst ask a question in plain language and get an answer grounded in the actual contract text and terms — not a generic search.
 
-**Predictive** (not yet built, dashed above) will use the growing body of real delivery and dispute history to anticipate problems before they happen: which deliveries are trending toward a late discharge, which counterparties or routes carry elevated dispute risk, where quality exposure is building up across an open book.
+**Predictive** (not yet built, dashed above) will use the growing body of real delivery and dispute history to anticipate problems before they happen: which deliveries are trending toward a late discharge, which counterparties or routes carry elevated dispute risk, where quality exposure is building up across an open book. It draws on two inputs: our own historical delivery/dispute data, and **Live Carrier Tracking** — real position and schedule data from carrier booking and tracking platforms (a carrier's own systems, or an integration platform such as CargoWise) — plotting a delivery's actual route in real time and projecting delays or early arrivals against the plan, rather than the static planned route shown in the diary today. Scoped further in [DIGASSAY/digassay's Integrations/Freight and Cargo doc](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/doc.md).
 
 ## Status
 
