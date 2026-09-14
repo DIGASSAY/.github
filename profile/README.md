@@ -53,7 +53,9 @@ The four outputs around the hub — **Supply Contracts, Quality Specification, D
 | [↳ 1.02 Coneksion](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Freight%20and%20Cargo%201.02%20Coneksion.md) | Youredi — OAuth 2.0 REST API + webhooks |
 | [↳ 1.03 OpenLink Endur](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Freight%20and%20Cargo%201.03%20Endur.md) | ION Group — JVS/OpenComponents, User Tables, DEX (targets S25) |
 | **[Knowledge Base — Historical Deliveries](https://github.com/DIGASSAY/digassay/blob/master/Knowledge%20Base/Historical%20Deliveries.md)** | Roadmap — cloud/on-prem/hybrid hosting, our own open-source LLM + private vector store over our own proprietary data |
-| **[Immutable Data — Overview](https://github.com/DIGASSAY/digassay/blob/master/Immutable%20Data/Overview.md)** | Roadmap — tamper-evident shared history; see also [Concept](https://github.com/DIGASSAY/digassay/blob/master/Immutable%20Data/Concept.md) and [Execution](https://github.com/DIGASSAY/digassay/blob/master/Immutable%20Data/Execution.md) |
+| **[Immutable Data — Overview](https://github.com/DIGASSAY/digassay/blob/master/Immutable%20Data/Overview.md)** | Roadmap — why a tamper-evident shared history matters |
+| [↳ Concept](https://github.com/DIGASSAY/digassay/blob/master/Immutable%20Data/Concept.md) | The model — hash-linked history, shared custody, selective visibility |
+| [↳ Execution](https://github.com/DIGASSAY/digassay/blob/master/Immutable%20Data/Execution.md) | Illustrative build — Hyperledger Fabric channels/private data collections |
 
 ## Status
 
