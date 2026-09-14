@@ -40,7 +40,13 @@ The four outputs around the hub — **Supply Contracts, Quality Specification, D
 
 **Knowledge Base** (not yet built, dashed above) sits on top of that structured data and the underlying contract documents themselves, letting a trader or ops analyst ask a question in plain language and get an answer grounded in the actual contract text and terms — not a generic search.
 
-**Predictive** (not yet built, dashed above) will use the growing body of real delivery and dispute history to anticipate problems before they happen: which deliveries are trending toward a late discharge, which counterparties or routes carry elevated dispute risk, where quality exposure is building up across an open book. It draws on two inputs: our own historical delivery/dispute data, and **Live Carrier Tracking** — real position and schedule data from carrier booking and tracking platforms (a carrier's own systems, or an integration platform such as CargoWise) — plotting a delivery's actual route in real time and projecting delays or early arrivals against the plan, rather than the static planned route shown in the diary today. Scoped further in [DIGASSAY/digassay's Integrations/Freight and Cargo doc](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/doc.md).
+**Predictive** (not yet built, dashed above) will use the growing body of real delivery and dispute history to anticipate problems before they happen: which deliveries are trending toward a late discharge, which counterparties or routes carry elevated dispute risk, where quality exposure is building up across an open book. It draws on two inputs: our own historical delivery/dispute data, and **Live Carrier Tracking** — real position and schedule data from carrier booking and tracking platforms (a carrier's own systems, or an integration platform such as CargoWise) — plotting a delivery's actual route in real time and projecting delays or early arrivals against the plan, rather than the static planned route shown in the diary today.
+
+## Dig deeper
+
+**[DIGASSAY/digassay](https://github.com/DIGASSAY/digassay)** holds integration and roadmap documentation:
+
+- **Freight & Cargo** — [CargoWise (WiseTech Global) integration guide](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/CargoWise.md) · [Coneksion (Youredi) integration guide](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Coneksion.md)
 
 ## Status
 
