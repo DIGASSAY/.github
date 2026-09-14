@@ -46,7 +46,7 @@ The four outputs around the hub — **Supply Contracts, Quality Specification, D
 
 **[DIGASSAY/digassay](https://github.com/DIGASSAY/digassay)** holds integration and roadmap documentation:
 
-- **Freight & Cargo** — [CargoWise (WiseTech Global) integration guide](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/CargoWise.md) · [Coneksion (Youredi) integration guide](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Coneksion.md)
+- **Freight & Cargo** — [CargoWise (WiseTech Global) integration guide](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/CargoWise.md) · [Coneksion (Youredi) integration guide](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Coneksion.md) · [OpenLink Endur (ION Group) integration guide](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Endur.md)
 
 ## Status
 
