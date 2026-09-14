@@ -10,48 +10,36 @@ DIGASSAY is an attempt to close that gap — starting from the real structure of
 
 ## The Ecosystem
 
-DIGASSAY is designed as three layers. The first is live today; the other two are roadmap.
+DIGASSAY sits at the centre, turning inputs from registries, reference data and the trade documents themselves into structured, queryable records — then, on the roadmap, turns that structured history into a knowledge base and a forecasting layer.
 
 ```mermaid
-flowchart TB
-    User(["Trading Desk / Operations Team"])
+flowchart LR
+    R1["Company / LEI Registries<br/>UK · FR · NO · GLEIF"] --> D
+    R2["Reference Registries<br/>mines · ports · rail terminals"] --> D
+    R3["Physical Trade Documents<br/>contracts, quality schedules"] --> D
+    R4["Assayists / Umpires<br/>Seller / Buyer / Umpire results"] --> D
 
-    subgraph PD["Pre-Digital — live today"]
-        direction TB
-        REG["Counterparty Registry\n(UK / FR / NO / GLEIF lookups)"]
-        CON["Supply Contracts"]
-        QUA["Quality Specification\n(chargeables, penalties, versioning)"]
-        LOG["Delivery Diary & Logistics\n(route estimate, road/rail/sea legs)"]
-        ASY["Assay Exchange\n(Seller/Buyer/Umpire assay, splitting limit)"]
-        REG --> CON --> QUA
-        CON --> LOG --> ASY
-    end
+    D(("DIGASSAY<br/>structure + validate<br/>+ track")) --> P1["Supply Contracts"]
+    D --> P2["Quality Specification<br/>chargeables, penalties, versioning"]
+    D --> P3["Delivery Diary &amp; Logistics<br/>road / rail / sea legs"]
+    D --> P4["Assay Exchange<br/>dispute resolution"]
 
-    subgraph KB["Knowledge Base — roadmap"]
-        direction TB
-        DOC["Contract & Regulatory\nDocument Store"]
-        RAG["Ask-the-Contract\n(retrieval-augmented Q&A)"]
-        DOC --> RAG
-    end
+    P1 --> KB["Knowledge Base<br/>Ask-the-Contract"]
+    P2 --> KB
+    P3 --> PR["Predictive<br/>delay / dispute / exposure risk"]
+    P4 --> PR
 
-    subgraph PR["Predictive — roadmap"]
-        direction TB
-        HIST["Historical Delivery &\nDispute Data"]
-        MODEL["Delay / Dispute / Exposure\nForecasting"]
-        HIST --> MODEL
-    end
-
-    User --> PD
-    PD -- "structured contract & delivery data" --> KB
-    PD -- "structured contract & delivery data" --> PR
-    KB -. "informs" .-> PR
+    classDef n fill:#DCE5D5,stroke:#2F4A32,color:#263526,stroke-width:2px;
+    classDef c fill:#2F4A32,stroke:#1F3021,color:#FFFFFF,stroke-width:4px;
+    classDef roadmap fill:#F5F0E3,stroke:#B89B5E,color:#2D3C21,stroke-width:2px,stroke-dasharray:5 5;
+    class R1,R2,R3,R4,P1,P2,P3,P4 n; class D c; class KB,PR roadmap;
 ```
 
-**Pre-Digital** is the foundation: turning the physical trade lifecycle — counterparty due diligence, contract terms, quality specification, transport planning, delivery tracking, assay dispute resolution — into structured, queryable data instead of documents and spreadsheets. This is the layer digitising what has historically been a pre-digital, paper-and-email process.
+The four outputs around the hub — **Supply Contracts, Quality Specification, Delivery Diary & Logistics, Assay Exchange** — are live today: the physical trade lifecycle turned into structured, queryable data instead of documents and spreadsheets.
 
-**Knowledge Base** (not yet built) will sit on top of that structured data and the underlying contract documents themselves, letting a trader or ops analyst ask a question in plain language and get an answer grounded in the actual contract text and terms — not a generic search.
+**Knowledge Base** (not yet built, dashed above) sits on top of that structured data and the underlying contract documents themselves, letting a trader or ops analyst ask a question in plain language and get an answer grounded in the actual contract text and terms — not a generic search.
 
-**Predictive** (not yet built) will use the growing body of real delivery and dispute history to anticipate problems before they happen: which deliveries are trending toward a late discharge, which counterparties or routes carry elevated dispute risk, where quality exposure is building up across an open book.
+**Predictive** (not yet built, dashed above) will use the growing body of real delivery and dispute history to anticipate problems before they happen: which deliveries are trending toward a late discharge, which counterparties or routes carry elevated dispute risk, where quality exposure is building up across an open book.
 
 ## Status
 
