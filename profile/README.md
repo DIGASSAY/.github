@@ -46,7 +46,12 @@ The four outputs around the hub — **Supply Contracts, Quality Specification, D
 
 **[DIGASSAY/digassay](https://github.com/DIGASSAY/digassay)** holds integration and roadmap documentation:
 
-- **[Freight & Cargo](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Freight%20and%20Cargo%201.00.md)** — master page for how vendor integrations fit together, with child pages for [CargoWise](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Freight%20and%20Cargo%201.01%20CargoWise.md), [Coneksion](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Freight%20and%20Cargo%201.02%20Coneksion.md) and [OpenLink Endur](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Freight%20and%20Cargo%201.03%20Endur.md)
+| Page | Covers |
+| :--- | :--- |
+| **[Freight & Cargo 1.00](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Freight%20and%20Cargo%201.00.md)** | Master page — how the vendor integrations fit together |
+| [↳ 1.01 CargoWise](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Freight%20and%20Cargo%201.01%20CargoWise.md) | WiseTech Global — eAdaptor XML messaging |
+| [↳ 1.02 Coneksion](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Freight%20and%20Cargo%201.02%20Coneksion.md) | Youredi — OAuth 2.0 REST API + webhooks |
+| [↳ 1.03 OpenLink Endur](https://github.com/DIGASSAY/digassay/blob/master/Integrations/Freight%20and%20Cargo/Freight%20and%20Cargo%201.03%20Endur.md) | ION Group — JVS/OpenComponents, User Tables, DEX (targets S25) |
 
 ## Status
 
